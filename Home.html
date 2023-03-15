@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- <script src="tailwindcss.js"></script> -->
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <!-- <script src="tailwindcss.js"></script>
+  <link rel="stylesheet" href="style.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Document</title>
 </head>
@@ -41,15 +41,6 @@
     margin-top: -600px;
     transform: translate(0%, 0%);
   }
-
-  /* .bgImage3 {
-    background-image: url('https://sekolah.kenzap.com/wp-content/themes/sekolah/images/call-to-action-bg.jpg');
-    width: 100%;
-    height: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 
   .bgImage3::after {
     content: "";
@@ -137,14 +128,14 @@
     theme: {
       extend: {
         colors: {
-          btnColor: '#F5AB35'
+          btnColor: '#F5AB35',
+          blueColor: 'rgba(15, 78, 163, 0.9);',
+          borderColor: '#F5AB35'
         }
       }
     }
   }
-</script>
 
-<script>
   window.onload = function () {
     document.getElementById("header").style.position = "fixed";
     document.getElementById("header").style.background = "transparent";
@@ -171,7 +162,7 @@
         <div class="lg:container flex flex-wrap items-center justify-between mx-auto">
           <a href="https://highschool-home.vercel.app/Home.html" class="flex items-center">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/High_School_Musical_Text_Logo.png"
-              alt="#ImgNotFound" style="width: 100px;">
+              alt="#ImgNotFound" class="w-24">
           </a>
           <button data-collapse-toggle="navbar-dropdown" type="button"
             class="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden hover:bg-gray-100 hover:text-black focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -260,7 +251,7 @@
         <div class="w-full md:w-1/2 mt-10">
           <p class="text-lg font-semibold">Grandmaster Talk</p>
           <p class="text-4xl mr-5"><b>EDUCATION IS THE MOST POWERFUL WEAPON</b></p>
-          <p class="text-sm mt-6 mr-5">
+          <p class="2xl:max-w-2xl xl:max-w-xl lg:max-w-md text-xl mt-6 mr-5">
             Our students are talented, hard-working and full of good ideas. We encourage and empower them to bring their
             ideas to life. Hands-on opportunities are what we're all about. Our students are busy doing things that
             matter. Take a look at the opportunities you'll have at the University. The task of the modern educator is
@@ -268,7 +259,7 @@
           </p>
           <img src="https://sekolah.kenzap.com/wp-content/uploads/2017/03/signature.png" alt="#ImgNotFound"
             class="mt-5">
-          <p class="font-semibold text-md mt-4">Katherine Gonzalez</p>
+          <div class="text-lg mt-4 font-semibold">Katherine Gonzalez</div>
           <p class="text-sm">Sekolah Grandmaster</p>
         </div>
         <div class="w-full md:w-1/2 mt-10">
@@ -279,9 +270,9 @@
     </div>
   </div>
 
-  <p class="text-4xl mt-16 text-center px-3">WE HAVE FAITH IN OUR STUDENT FUTURE</p>
+  <p class="text-4xl mt-16 text-center px-3"><b>WE HAVE FAITH IN OUR STUDENT FUTURE</b></p>
   <div class="max-w-2xl text-center m-auto px-3">
-    <p class="text-sm mt-6">
+    <p class="2xl:max-w-2xl xl:max-w-xl text-xl mt-6">
       Our students are talented, hard-working and full of good ideas. We encourage and empower them to bring their ideas
       to life. Hands-on opportunities are what we're all about.
     </p>
@@ -293,29 +284,33 @@
         <div class="w-full md:w-1/2 lg:w-3/12 mt-12 px-3">
           <img src="https://sekolah.kenzap.com/wp-content/uploads/2017/03/we-have-faith-img-1.png" alt="#ImgNotFound"
             class="m-auto">
-          <p class="text-xl my-4 text-center">Empower</p>
-          <p class="text-md my-4 text-center">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+          <p class="text-lg my-4 text-center font-semibold">Empower</p>
+          <p class="2xl:max-w-2xl xl:max-w-xl lg:max-w-md text-xl my-4 text-center">Duis autem vel eum iriure dolor in
+            hendrerit in vulputate velit esse
             molestie consequat</p>
         </div>
         <div class="w-full md:w-1/2 lg:w-3/12 mt-12 px-3">
           <img src="https://sekolah.kenzap.com/wp-content/uploads/2017/03/we-have-faith-img-1.png" alt="#ImgNotFound"
             class="m-auto">
-          <p class="text-xl my-4 text-center">Engage</p>
-          <p class="text-md my-4 text-center">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+          <p class="text-lg my-4 text-center font-semibold">Engage</p>
+          <p class="2xl:max-w-2xl xl:max-w-xl lg:max-w-md text-xl my-4 text-center">Duis autem vel eum iriure dolor in
+            hendrerit in vulputate velit esse
             molestie consequat</p>
         </div>
         <div class="w-full md:w-1/2 lg:w-3/12 mt-12 px-3">
           <img src="https://sekolah.kenzap.com/wp-content/uploads/2017/03/we-have-faith-img-1.png" alt="#ImgNotFound"
             class="m-auto">
-          <p class="text-xl my-4 text-center">Graduation</p>
-          <p class="text-md my-4 text-center">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+          <p class="text-lg my-4 text-center font-semibold">Graduation</p>
+          <p class="2xl:max-w-2xl xl:max-w-xl lg:max-w-md text-xl my-4 text-center">Duis autem vel eum iriure dolor in
+            hendrerit in vulputate velit esse
             molestie consequat</p>
         </div>
         <div class="w-full md:w-1/2 lg:w-3/12 mt-12 px-3">
           <img src="https://sekolah.kenzap.com/wp-content/uploads/2017/03/we-have-faith-img-1.png" alt="#ImgNotFound"
             class="m-auto">
-          <p class="text-xl my-4 text-center">Awarding</p>
-          <p class="text-md my-4 text-center">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+          <p class="text-lg my-4 text-center font-semibold">Awarding</p>
+          <p class="2xl:max-w-2xl xl:max-w-xl lg:max-w-md text-xl my-4 text-center">Duis autem vel eum iriure dolor in
+            hendrerit in vulputate velit esse
             molestie consequat</p>
         </div>
       </div>
@@ -343,9 +338,10 @@
     </div>
   </div>
 
-  <p class="text-4xl md:pt-0 pt-32 text-center px-3 academicCalendar">ACADEMIC CALENDAR</p>
+  <p class="text-4xl md:pt-0 pt-32  text-center px-3 academicCalendar"><b>ACADEMIC CALENDAR</b></p>
+
   <div class="max-w-2xl text-center m-auto px-3">
-    <p class="text-sm mt-6 px-3">
+    <p class="2xl:max-w-2xl xl:max-w-xl text-xl mt-6">
       Our students are talented, hard-working and full of good ideas. We encourage and empower them to bring their
       ideas
       to life. Hands-on opportunities are what we're all about. View Full Calendar
@@ -353,29 +349,8 @@
   </div>
   <img src="img.png" alt="#ImgNotFound" class="m-auto mt-5">
 
-  <div class="bgImage3 mt-20"></div>
-  <div class="content3">
-    <div class="md:max-w-6xl mx-auto px-3 mt-20">
-      <div class="px-3 pt-40">
-        <div class="flex flex-wrap p-10">
-          <div class="w-full md:w-2/12 lg:w-2/12 px-3">
-            <img src="https://sekolah.kenzap.com/wp-content/uploads/2017/03/call-to-action-img.png" alt="#ImgNotFound"
-              class="m-auto">
-          </div>
-          <div class="w-full md:w-10/12 lg:w-7/12 px-3 text-3xl text-white md:text-left text-center">
-            <p><b>OUR STUDENTS ARE TALENTED,</b></p>
-            <p>passionate, hard-working and full of good ideas. </p>
-          </div>
-          <div class="w-full lg:w-3/12 px-3">
-            <button type="button" class="bg-btnColor text-white p-5 w-full mt-5 rounded"><b>Learn More</b></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <p class="text-4xl md:pt-0 pt-32 text-center px-3 academicCalendar">OUR LATEST NEWS</p>
-  <div class="md:max-w-6xl mx-auto px-3 mt-10">
+  <p class="text-4xl md:pt-0 mt-16 text-center px-3"><b>OUR LATEST NEWS</b></p>
+  <div class="md:max-w-6xl mx-auto px-3">
     <div class="px-3">
       <div class="flex flex-wrap">
         <div class="w-full md:w-1/2 lg:w-3/12 px-3 max-w-md mx-auto mt-5">
@@ -383,7 +358,7 @@
             <img class="w-full" src="https://sekolah.kenzap.com/wp-content/uploads/2016/11/news-single-img-271x243.jpg"
               alt="Sunset in the mountains">
             <div class="px-6 py-4">
-              <p class="text-gray-700 text-base">
+              <p class="text-gray-700 text-lg">
                 Jobs, Career Presentation to Coincide with Conferences
                 <br><br>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
@@ -397,7 +372,7 @@
               src="https://sekolah.kenzap.com/wp-content/uploads/2017/06/Cape_Town_Stadium_Aerial_View-271x243.jpg"
               alt="Sunset in the mountains">
             <div class="px-6 py-4">
-              <p class="text-gray-700 text-base">
+              <p class="text-gray-700 text-lg">
                 Jobs, Career Presentation to Coincide with Conferences
                 <br><br>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
@@ -411,7 +386,7 @@
               src="https://sekolah.kenzap.com/wp-content/uploads/2016/11/shutterstock_287328122-271x243.jpeg"
               alt="Sunset in the mountains">
             <div class="px-6 py-4">
-              <p class="text-gray-700 text-base">
+              <p class="text-gray-700 text-lg">
                 Jobs, Career Presentation to Coincide with Conferences
                 <br><br>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
@@ -425,7 +400,7 @@
               src="https://sekolah.kenzap.com/wp-content/uploads/2016/11/shutterstock_367274759-271x243.jpeg"
               alt="Sunset in the mountains">
             <div class="px-6 py-4">
-              <p class="text-gray-700 text-base">
+              <p class="text-gray-700 text-lg">
                 Jobs, Career Presentation to Coincide with Conferences
                 <br><br>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
@@ -468,8 +443,8 @@
     <div class="section1 md:mx-5 mx-3">
       <div class="flex flex-wrap mt-24">
         <div class="w-full md:w-1/2 mt-10">
-          <p class="text-4xl mr-5">WATCH OUR VIDEO</p>
-          <p class="text-sm mt-6 mr-5">
+          <p class="text-4xl mr-5"><b>WATCH OUR VIDEO</b></p>
+          <p class="2xl:max-w-2xl xl:max-w-xl text-xl mt-6 mr-5">
             From the teachers, to the assistants, to the students, there is such a family atmosphere that is perfect for
             nurturing academic ability. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
             euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. adipiscing elit, sed diam nonummy nibh
@@ -489,7 +464,7 @@
   <div class="md:max-w-6xl mx-auto px-3">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj8lg6WjKSH0OLi3YDMcU2CvBgtCEv0z62tQ&usqp=CAU"
       alt="#ImgNotFound" width="50px" class="mx-auto mt-24">
-    <p class="text-lg text-center mt-6 mr-5">
+    <p class="text-xl mt-6 mr-5 text-center">
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nibh velit. Nam varius lectus et tortor
       placerat
       ultrices. Curabitur quis ipsum lacinia, dictum tortor ac, ornare sem. Fusce iaculis urna sit amet quam posuere
@@ -508,8 +483,8 @@
             <img class="w-50 m-auto rounded-full"
               src="https://sekolah.kenzap.com/wp-content/uploads/2017/03/testimonial-img-1.jpg">
             <div class="px-6 py-4">
-              <p class="font-semibold text-md mt-4">Douglas Ortega</p>
-              <p class="text-sm">Student of Sociology</p>
+              <p class="text-lg mt-4 font-semibold">Douglas Ortega</p>
+              <p class="text-sm">Student of Mathematics</p>
             </div>
           </div>
         </div>
@@ -552,7 +527,7 @@
               src="https://sekolah.kenzap.com/wp-content/uploads/2017/03/testimonial-img-4.jpg">
             <div class="px-6 py-4">
               <p class="font-semibold text-md mt-4">Michelle Jensen</p>
-              <p class="text-sm">Student of Science</p>
+              <p class="text-sm">Student of Mathematics</p>
             </div>
           </div>
         </div>
@@ -560,7 +535,7 @@
     </div>
   </div>
 
-  <div class="pb-16" style="background-color: rgba(15, 78, 163, 0.9);">
+  <div class="pb-16 bg-blueColor">
     <div class="md:max-w-6xl mx-auto px-3">
       <div class="section1 md:mx-5 mx-3">
         <div class="flex flex-wrap mt-24 py-6">
